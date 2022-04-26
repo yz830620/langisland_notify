@@ -28,6 +28,9 @@ services:
 
   linenotify:
     image: service-line-notify
+    volumes:
+      - ./line_notify/src:/home/app/workdir/src
+      - ./line_notify/main.py:/home/app/workdir/main.py
     env_file:
       - line_notify/docker/.env
     ports:

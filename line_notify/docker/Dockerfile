@@ -50,6 +50,7 @@ RUN pip3 --no-cache-dir install -r $APP_HOME/requirements.txt
 # ALL FILE Into image: COPY . /home/app/workdir/
 COPY ./main.py $APP_HOME/main.py
 COPY ./config $APP_HOME/config/
+COPY ./src $APP_HOME/src/
 
 # Opencv package need dconf folder to save the information.
 RUN mkdir -p /home/app/.cache/dconf
