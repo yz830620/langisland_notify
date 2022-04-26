@@ -1,0 +1,13 @@
+
+### move to file dir
+
+`cd line_notify/docker`
+
+
+### build the service image
+
+`bash docker-build-service.sh`
+
+
+### start the service
+`bash docker-start-service.sh`
